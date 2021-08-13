@@ -6,6 +6,7 @@ pipeline {
                 sh 'echo $PATH'
                 sh 'pwd'
                 sh 'id'
+                sh 'ls -l'
             }
         }
     }
