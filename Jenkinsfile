@@ -1,11 +1,11 @@
 pipeline {
-    agent {
-        docker { image 'node:14-alpine' }
-    }
+    agent any
     stages {
-        stage('Test') {
+        stage('shell environment') {
             steps {
-                sh 'node --version'
+                sh 'echo $PATH'
+                sh 'pwd'
+                sh 'id'
             }
         }
     }
